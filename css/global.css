@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+
+
+  --clr-primary-dark: #06040A;
+  --clr-primary-medium: #016236;
+  --clr-primary-light: #3fc46e;
+  --clr-primary-highlight: #c7e146;
+  --clr-primary-shadow: #08313A;
+
+  --clr-text-light: #f0f0f0;
+
+  --clr-blue-dark: #292b35;
+  --clr-blue-medium: #37485f;
+  --clr-blue-medium2: #34384d;
+  --clr-blue-hover: #394353;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-primary-dark);
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+section {
+  color: #d8d8d8;
+}
+
+section h3 {
+  font-size: 1.6rem;
+  margin: 0;
+
+}
+
+section a {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.introduction {
+  width: 40vw;
+  padding: 30px;
+  border-left: 4px solid white;
+}
+
+
+
+
+/* ==========
+NAVIGATION
+========== */
+
+nav {
+  background-color: var(--clr-primary-medium);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3 {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 30px 0 0;
+}
+
+nav .tech-container img {
+  height: 32px;
+}
+
+nav .logo {
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+
+nav .menu-container, 
+nav .tech-container {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+nav .nav-link {
+  color: rgb(216, 218, 220);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+nav .nav-link:hover {
+  background-color: var(--clr-primary-shadow);
+}
+
+nav .hamburger {
+  display: none;
+}
+
+nav .hamburger-list-container .nav-link {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  nav h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  nav .hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 8px;
+  }
+
+  .menu-container .nav-links {
+    display: none;
+  }
+}
+
+.vline {
+  border: 1px solid rgb(216, 218, 220);
+}
+
+.hamburger-list-container hr {
+  position: absolute;
+  width: 80px;
+  left: 10px;
+}
+
+/* ==========
+FOOTER SECTION
+========== */
+
+footer {
+  background-color: var(--clr-primary-shadow);
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
